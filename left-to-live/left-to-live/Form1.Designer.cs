@@ -35,6 +35,8 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.weeksLived = new System.Windows.Forms.Label();
             this.leftToLive = new System.Windows.Forms.Label();
+            this.progressBarLived = new System.Windows.Forms.ProgressBar();
+            this.progressBarLeft = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // birthDate
@@ -83,11 +85,28 @@
             this.leftToLive.Size = new System.Drawing.Size(0, 31);
             this.leftToLive.TabIndex = 3;
             // 
+            // progressBarLived
+            // 
+            this.progressBarLived.Location = new System.Drawing.Point(100, 204);
+            this.progressBarLived.Name = "progressBarLived";
+            this.progressBarLived.Size = new System.Drawing.Size(149, 34);
+            this.progressBarLived.TabIndex = 4;
+            this.progressBarLived.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // progressBarLeft
+            // 
+            this.progressBarLeft.Location = new System.Drawing.Point(449, 205);
+            this.progressBarLeft.Name = "progressBarLeft";
+            this.progressBarLeft.Size = new System.Drawing.Size(149, 33);
+            this.progressBarLeft.TabIndex = 5;
+            // 
             // App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progressBarLeft);
+            this.Controls.Add(this.progressBarLived);
             this.Controls.Add(this.leftToLive);
             this.Controls.Add(this.weeksLived);
             this.Controls.Add(this.bornLabel);
@@ -108,5 +127,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label weeksLived;
         private System.Windows.Forms.Label leftToLive;
+        private System.Windows.Forms.ProgressBar progressBarLived;
+        private System.Windows.Forms.ProgressBar progressBarLeft;
     }
 }

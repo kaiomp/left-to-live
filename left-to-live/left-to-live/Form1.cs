@@ -11,6 +11,7 @@ namespace left_to_live
             InitializeComponent();
             birthDate.Format = DateTimePickerFormat.Custom;
             birthDate.CustomFormat = "dd/MM/yyyy";
+            //birthDate.KeyUp += new KeyEventHandler(birthDate_KeyUp);
         }
 
         private void App_Load(object sender, EventArgs e)
@@ -45,6 +46,13 @@ namespace left_to_live
             var weeksLived = timeSpan.TotalDays / 7;
             var weeksLeft = averageLifespanInWeeks - weeksLived;
             leftToLive.Text = $"{Math.Floor(weeksLeft)} weeks left"; // $"You have approximately {Math.Floor(weeksLeft)} weeks left to live.";
+
+            int totalWeeks = (int)(averageLifespanInWeeks);
+            int livedPercentage = (int)((double)weeksLived / totalWeeks * 100);
+            int leftPercentage = (int)((double)weeksLeft / totalWeeks * 100);
+
+            progressBarLived.Value = Math.Max(0, Math.Min(100, livedPercentage));
+            progressBarLeft.Value = Math.Max(0, Math.Min(100, leftPercentage));
         }
 
         private void DisplayAverageLifespan()
@@ -59,6 +67,14 @@ namespace left_to_live
 
         }
 
+        private void birthDate_KeyUp(object sender, KeyEventArgs e)
+        {
+            if ((e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || (e.KeyCode >= Keys.NumPad0 && e.KeyCode <= Keys.NumPad9))
+            {
+                SendKeys.Send("{RIGHT}");
+            }
+        }
+
         private void weeksLived_Click(object sender, EventArgs e)
         {
 
@@ -70,6 +86,11 @@ namespace left_to_live
         }
 
         private void App_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }
