@@ -1,0 +1,11 @@
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\bin\Debug\left-to-live.exe.config
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\bin\Debug\left-to-live.exe
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\bin\Debug\left-to-live.pdb
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left-to-live.csproj.AssemblyReference.cache
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left-to-live.csproj.SuggestedBindingRedirects.cache
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left_to_live.App.resources
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left_to_live.Properties.Resources.resources
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left-to-live.csproj.GenerateResource.cache
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left-to-live.csproj.CoreCompileInputs.cache
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left-to-live.exe
+C:\Users\kaiom\Documents\GitHub\left-to-live\left-to-live\left-to-live\obj\Debug\left-to-live.pdb
