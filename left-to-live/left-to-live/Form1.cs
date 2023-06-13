@@ -10,7 +10,7 @@ namespace left_to_live
         {
             InitializeComponent();
             birthDate.Format = DateTimePickerFormat.Custom;
-            birthDate.CustomFormat = "MM/dd/yyyy";
+            birthDate.CustomFormat = "dd/MM/yyyy";
         }
 
         private void App_Load(object sender, EventArgs e)
